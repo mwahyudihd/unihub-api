@@ -1,0 +1,30 @@
+{
+  "name": "unihub-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/multipart": "^9.0.3",
+    "@fastify/static": "^8.2.0",
+    "bcrypt": "^6.0.0",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.0",
+    "fastify": "^5.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^7.0.5",
+    "nodemon": "^3.1.10",
+    "pg": "^8.16.3",
+    "sequelize": "^6.37.7",
+    "url": "^0.11.4"
+  }
+}
