@@ -206,7 +206,10 @@ export const changeProfilePicture = async (request, reply) => {
     // Panggil service untuk memproses file.
     const updatedUser = await updateImageProfile(userId, fileData);
 
-    reply.code(200).send({
+    reply.header('Access-Control-Allow-Origin', request.headers.origin || '*')
+    .header('Access-Control-Allow-Methods', 'GET, POST, PUT, PATCH, DELETE, OPTIONS')
+    .header('Access-Control-Allow-Headers', 'Content-Type, Authorization')
+    .code(200).send({
       message: 'Foto profil berhasil diperbarui',
       statusCode: 200,
       data: updatedUser,
