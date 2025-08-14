@@ -39,7 +39,7 @@ await fastify.register(fastifyCors, {
   origin: "*", // Hanya izinkan request dari domain ini
   // Anda juga bisa menggunakan array untuk beberapa domain:
   // origin: ["https://app.unihub.com", "http://localhost:3000"],
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
 });
 
 const userRoutesOptions = {
